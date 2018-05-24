@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/Bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/site.css">
+    <script src="assets/jQuery-3.2.1/jquery-3.2.1.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="container container-body">
+        <div class="col-sm-3 col-left">
+            <div class="input-group search-box">
+                <input class="form-control" id="search-form" placeholder="Search">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                        <span class="glyphicon glyphicon-search"></span>
+                </button>
+                </span>
+            </div>
+            <div class="btn-group-site" id="menu">
+                <div id="home-group" class="group">
+                    <button type="button" class="btn btn-collapsible" id="btn-home" name="home">Home</button>
+                    <div id="home-child"></div>
+                </div>
+                <div id="project-group" class="group">
+                    <button type="button" class="btn btn-collapsible" id="btn-home" name="project">Projects</button>
+                    <div id="project-child" class="child">
+                        <button type="button" class="btn btn-collapsible btn-child" id="btn-projecta-tab" name="projecta">
+                            <i class="glyphicon glyphicon-triangle-bottom"></i>
+                            <a>Project A</a>
+                        </button>
+                        <button type="button" class="btn btn-collapsible btn-child" id="btn-projectb-tab" name="projectb">
+                            <i class="glyphicon glyphicon-triangle-bottom"></i>
+                            <a>Project B</a>
+                        </button>
+                        <button type="button" class="btn btn-collapsible btn-child" id="btn-projectc-tab" name="projectc">
+                            <i class="glyphicon glyphicon-triangle-bottom"></i>
+                            <a>Project C</a>
+                        </button>
+                        <button type="button" class="btn btn-collapsible btn-child" id="btn-closed-tab" name="closed">
+                            <i class="glyphicon glyphicon-triangle-bottom"></i>
+                            <a>Closed</a>
+                        </button>
+                        <div id="closed-child">
+                            <div class="child-item">
+                                <button type="button" class="btn btn-collapsible btn-child" id="btn-project1-tab" name="project1">
+                                    <a>Project 1</a>
+                                </button>
+                            </div>
+                            <div class="child-item">
+                                <button type="button" class="btn btn-collapsible btn-child" id="btn-project2-tab" name="project2">
+                                    <a>Project 2</a>
+                                </button>
+                            </div>
+                            <div class="child-item">
+                                <button type="button" class="btn btn-collapsible btn-child" id="btn-project3-tab" name="project3">
+                                    <a>Project 3</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="contact-group">
+                    <button type="button" class="btn btn-collapsible" id="btn-contact" name="contact">Contact</button>
+                    <div id="contact-child" class="child">
+                        <button type="button" class="btn btn-collapsible btn-child" id="btn-contact-tab" name="office">
+                            <i class="glyphicon glyphicon-triangle-bottom"></i>
+                            <a>Office</a>
+                        </button>
+                        <div id="office-child">
+                            <div class="child-item">
+                                <button type="button" class="btn btn-collapsible btn-child" id="btn-office1-tab" name="office1">
+                                    <a>Office 1</a>
+                                </button>
+                            </div>
+                            <div class="child-item">
+                                <button type="button" class="btn btn-collapsible btn-child" id="btn-office2-tab" name="office2">
+                                    <a>Office 2</a>
+                                </button>
+                            </div>
+                            <div class="child-item">
+                                <button type="button" class="btn btn-collapsible btn-child" id="btn-office3-tab" name="office3">
+                                    <a>Office 3</a>
+                                </button>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-collapsible btn-child" id="btn-contact-tab" name="website">
+                            <i class="glyphicon glyphicon-triangle-bottom"></i>
+                            <a>Website</a>
+                        </button>
+                        <div id="website-child">
+                            <div class="child-item">
+                                <button type="button" class="btn btn-collapsible btn-child" id="btn-website1-tab" name="website1">
+                                    <a>Website 1</a>
+                                </button>
+                            </div>
+                            <div class="child-item">
+                                <button type="button" class="btn btn-collapsible btn-child" id="btn-website2-tab" name="website2">
+                                    <a>Website 2</a>
+                                </button>
+                            </div>
+                            <div class="child-item">
+                                <button type="button" class="btn btn-collapsible btn-child" id="btn-website3-tab" name="website3">
+                                    <a>Website 3</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="report-group">
+                    <button type="button" class="btn btn-collapsible" id="btn-reports" name="reports">Reports</button>
+                    <div id="report-child"></div>
+                </div>
+                <div id="report-group">
+                    <button type="button" class="btn btn-collapsible" id="btn-settings" name="settings">Settings</button>
+                    <div id="setting-child"></div>
+                </div>
+                <div id="report-group">
+                    <button type="button" class="btn btn-collapsible" id="btn-signout" name="signout">Sign out</button>
+                    <div id="signout-child"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-9 content" id="content">
+            <ul class="tabs-header" id="content-header" data-toggle="collapse" >
+                <li><a href="#" name="home" id="home-header">Home</a></li>
+                <li><a href="#" name="projecta" id="projecta-header">Project A</a></li>
+                <li><a href="#" name="projectb" id="projectb-header">Project B</a></li>
+                <li><a href="#" name="projectc" id="projectc-header">Project C</a></li>
+                <li><a href="#" name="project1" id="project1-header">Project 1</a></li>
+                <li><a href="#" name="website1" id="website1-header">Website 1</a></li>
+                <li><a href="#" name="settings" id="settings-header">Settings</a></li>
+                <li><a href="#" name="reports" id="reports-header">Reports</a></li>
+                <li><a href="#" name="signout" id="signout-header">Sign Out</a></li>
+            </ul>
+            <div id="content-body">
+                <div id="home-tab">
+                    <h3>Home tab</h3>
+                    <p>We are extremely proud of our past work and have included a number of samples here for clients to see.
+                    </p>
+                </div>
+                <div id="projecta-tab">
+                    <h3>Project A tab</h3>
+                    <p>Enterprise Lab team is incredible. Able to think ahead and propose solutions without step-by-step details. Great communication, excellent English. Really looking forward to working with them again.</p>
+                </div>
+                <div id="projectb-tab">
+                    <h3>Project B tab</h3>
+                    <p>Enterprise Lab is a truly awesome team and we will definitely call on them again in the future. Despite our time pressures they pushed the work through and was very professional, both in work and communication. Thanks team!</p>
+                </div>
+                <div id="projectc-tab">
+                    <h3>Project C tab</h3>
+                </div>
+                <div id="project1-tab">
+                    <h3>Project 1</h3>
+                    <p>Vinh did an excellent job stepping revitalizing a legacy application, updating and debugging the database, and helping us move it to the cloud. He is easy to communicate with, sets clear expectations, and delivers on time.
+                        <p>
+                </div>
+                <div id="project2-tab">
+                    <h3>Project 2</h3>
+                    <p>Vinh did an excellent job stepping revitalizing a legacy application, updating and debugging the database, and helping us move it to the cloud. He is easy to communicate with, sets clear expectations, and delivers on time.
+                        <p>
+                </div>
+                <div id="project3-tab">
+                    <h3>Project 3</h3>
+                    <p>Vinh did an excellent job stepping revitalizing a legacy application, updating and debugging the database, and helping us move it to the cloud. He is easy to communicate with, sets clear expectations, and delivers on time.
+                        <p>
+                </div>
+                <div id="website1-tab">
+                    <h3>Website 1</h3>
+                    <p>Vinh did an excellent job stepping revitalizing a legacy application, updating and debugging the database, and helping us move it to the cloud. He is easy to communicate with, sets clear expectations, and delivers on time.
+                        <p>
+                </div>
+                <div id="reports-tab">
+                    <h3>Report tab</h3>
+                    <p>We are extremely proud of our past work and have included a number of samples here for clients to see.
+                    </p>
+                </div>
+                <div id="settings-tab">
+                    <h3>Settings tab</h3>
+                    <p>Enterprise Lab has exceptional resources to work with. I recommend them to anyone needing Web or SQL Development. The team helped design and develop a complex financial services application. Throughout the project, they thoroughly understood the requirements and delivered an exceptional product. Their communication skills are great as they were always available to answer questions and make suggestions. Additionally, the team is able to work without constant supervision. I continue to utilize Enterprise Lab team for ongoing support and future development.</p>
+                </div>
+                <div id="signout-tab">
+                    <h3>Sign out tab</h3>
+                    <p>We are extremely proud of our past work and have included a number of samples here for clients to see.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/myscript.js" type="text/javascript"></script>
+</body>
+
+</html>

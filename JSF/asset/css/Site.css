@@ -1,0 +1,109 @@
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+
+
+/* Set padding to keep content from hitting the edges */
+
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+
+/* Set width on the form input elements since they're 100% wide by default */
+
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.div-table {
+    border: 1px solid #0ab66b;
+    margin-top: 10px;
+}
+
+.header-style {
+    background-color: #0ab66b;
+    height: 35px;
+    font-size: 14px;
+    color: white;
+}
+
+.icon-table {
+    border-right: 1px solid rgba(255, 255, 255, 0.46);
+    height: 100%;
+    padding: 5px 11px;
+    display: table;
+    float: left;
+}
+
+.icon-table>i {
+    font-size: 19px;
+}
+
+.header-style>p {
+    font-size: 16px;
+    display: inline-block;
+    height: 100%;
+    padding: 4px 10px;
+    margin: 0px;
+}
+
+.icon-close {
+    display: inline-block;
+    float: left;
+    background-color: white;
+}
+
+.dataTables_wrapper {
+    margin: 0px 10px;
+    display: table;
+}
+
+.dataTables_length {
+    display: inline;
+}
+
+.dataTables_info {
+    display: inline;
+    float: left;
+}
+
+.dataTables_filter {
+    display: inline;
+    float: right;
+}
+
+.paginate_button {
+    background-color: silver;
+}
+
+.dataTables_paginate {
+    margin-bottom: 10px;
+}
+
+.button-close {
+    background-color: #fff;
+    display: table;
+    float: right;
+    border: none;
+}
+
+.icon-bar {
+    display: block;
+    background-color: #0ab66b;
+    height: 3px;
+    width: 14px;
+    margin: 13px 10px;
+    margin-bottom: 17px;
+}
+
+table.dataTable.no-footer {
+    border-bottom-color: transparent;
+
+}

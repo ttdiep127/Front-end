@@ -1,0 +1,139 @@
+body {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container-body {
+    margin-top: 20px;
+    border: 1px solid #039BE5;
+    padding-top: 10px;
+    height: auto;
+}
+
+.col-left {
+    padding: 3px;
+}
+
+.search-box {
+    margin-bottom: 10px;
+}
+
+.btn-group-site {
+    display: block;
+    margin-bottom: 10px;
+    border: 1px solid #4FC3F7;
+    border-radius: 4px;
+    background-color: #4FC3F7;
+}
+
+.child{
+    padding-left:20px;
+}
+
+.btn-collapsible {
+    width: 100%;
+    background-color: #4FC3F7;
+    color: white;
+    font-size: 16px;
+    text-align: left;
+    border-radius: 0px;
+}
+
+.btn:focus{
+    outline: 0px;
+}
+
+.btn-child {
+    background-color: #FAFAFA;
+    color: #3E2723;
+}
+
+.btn-child>i {
+    font-size: 12px;
+}
+
+.child-item {
+    margin-left: 30px;
+}
+
+.content {
+    margin-top: 5px;
+}
+
+.tabs-header {
+    display: table;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tabs-header li {
+    float: left;
+    margin: 0 5px 0 0;
+}
+
+.tabs-header a {
+    position: relative;
+    background-image: linear-gradient(to top, snow, skyblue);
+    padding: 7px 11px;
+    float: left;
+    text-decoration: none;
+}
+
+.tabs-header a:hover,
+.tabs-header a:hover::after,
+.tabs-header a:focus,
+.tabs-header a:focus::after {
+    background: powderblue;
+}
+
+
+.tabs-header a::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: -.5em;
+    bottom: 0;
+    width: 1em;
+    background-image: linear-gradient(to top, #fff, skyblue);
+    box-shadow: 2px 0px 2px -1px rgba(0, 0, 0, .4);
+    transform: skew(10deg);
+    border-radius: 0 5px 0 0;
+}
+
+.tabs-header #current a,
+.tabs-header #current a::after {
+    background: #fff;
+    z-index: 3;
+}
+
+#content-body {
+    background: #fff;
+    padding: 2em;
+    position: relative;
+    z-index: 2;
+    border-radius: 0 5px 5px 5px;
+    box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, .5);
+}
+
+.child{
+    background-color: snow;
+}
+
+@media screen and (min-width: 780px){
+    .btn-group-site{
+        min-height: 500px;     
+    }
+}
+
+@media screen and (min-width: 1600px){
+    .container-body{
+        width: 1600px;
+    }
+}
